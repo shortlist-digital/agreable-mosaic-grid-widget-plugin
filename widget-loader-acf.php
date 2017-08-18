@@ -1,7 +1,6 @@
 <?php
 
 $key = 'widget_mosaic-grid';
-$choices = self::$config['image_choices'];
 $widgetplacement = self::$config['tab_placement'];
 $post_types = self::$config['post_types'];
 
@@ -84,7 +83,7 @@ $widget_config = array (
           'key' => $key . '_advanced_details_tab',
           'label' => 'Advanced Details',
           'type' => 'tab',
-          'placement' => 'left',
+		  'placement' => $widgetplacement,
         ),
         array (
           'key' => $key . '_no_text',
@@ -93,20 +92,20 @@ $widget_config = array (
           'type' => 'true_false',
           'layout' => 'horizontal',
         ),
-        array (
-          'key' => $key . '_text_color',
-          'label' => 'Text Colour',
-          'name' => 'text_color',
-          'type' => 'color_picker',
-          'layout' => 'horizontal'
-        ),
-        array (
-          'key' => $key . '_button_color',
-          'label' => 'Button Colour',
-          'name' => 'button_color',
-          'type' => 'color_picker',
-          'layout' => 'vertical',
-        ),
+        // array (
+        //   'key' => $key . '_text_color',
+        //   'label' => 'Text Colour',
+        //   'name' => 'text_color',
+        //   'type' => 'color_picker',
+        //   'layout' => 'horizontal'
+        // ),
+        // array (
+        //   'key' => $key . '_button_color',
+        //   'label' => 'Button Colour',
+        //   'name' => 'button_color',
+        //   'type' => 'color_picker',
+        //   'layout' => 'vertical',
+        // ),
       ),
     ),
   ),
